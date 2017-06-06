@@ -1,0 +1,48 @@
+extends ./layout/layout.pug
+
+block content
+
+  #myCarousel.carousel.slide(data-ride='carousel')
+    .carousel-inner
+      .item.active
+        img(src='assets/images/2017_JUNE/slider0.jpg')
+      //- item
+      .item
+        img(src='assets/images/2017_JUNE/slider1.jpg')
+      //- item
+      .item
+        img(src='assets/images/2017_JUNE/slider2.jpg')
+      //- item
+      .item
+        img(src='assets/images/2017_JUNE/slider3.jpg')
+      //- item
+      .item
+        img(src='assets/images/2017_JUNE/slider4.png')
+      //- item
+      .item
+        img(src='assets/images/2017_JUNE/slider5.png')
+      //- item
+      .item
+        img(src='assets/images/2017_JUNE/slider6.png')
+      //- item
+      .item
+        img(src='assets/images/2017_JUNE/slider7.png')
+      //- item
+      .item
+        img(src='assets/images/2017_JUNE/slider8.png')
+      //- item
+      .item
+        img(src='assets/images/2017_JUNE/slider11.jpg')
+      //- item
+    //- carousel-inner
+  //- myCarousel
+
+block scripts
+  // External Script goes here...
+  script.
+    $(document).ready(function() {
+      $('.carousel').carousel({
+        interval: 5000,
+        pause: null
+      });
+    });
