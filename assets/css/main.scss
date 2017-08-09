@@ -36,6 +36,24 @@ body {
         // width: auto;
         // transform: translateX(-50%);
       }
+      &.announcement {
+        & {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          flex-direction: column;
+        }
+        h1 {
+          font-size: 100px;
+          span {
+            color: #006093;
+          }
+        }
+        p.lead {
+          font-size: 45px;
+        }
+      }
     }
   }
 }
